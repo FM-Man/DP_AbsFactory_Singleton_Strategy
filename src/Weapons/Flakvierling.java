@@ -1,3 +1,5 @@
+package Weapons;
+
 public class Flakvierling extends Artillery{
     private int id;
     public Flakvierling(int id) {

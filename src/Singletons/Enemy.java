@@ -1,9 +1,11 @@
+package Singletons;
+
 public class Enemy {
     private static Enemy instance;
     private double health;
     private int id;
 
-    public Enemy(int id){
+    private Enemy(int id){
         instance = this;
         health = 1000;
         this.id = id;

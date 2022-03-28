@@ -1,3 +1,8 @@
+package Singletons;
+
+import AbstractFactory.WeaponCreator;
+import Weapons.Weapon;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -6,7 +11,7 @@ public class Game {
     private Enemy enemy = Enemy.getInstance();
     private ArrayList<Weapon> weapons;
 
-    public Game(){
+    private Game(){
         instance=this;
         WeaponCreator weaponCreator = new WeaponCreator();
         weapons = weaponCreator.getWeapons();
@@ -19,8 +24,8 @@ public class Game {
     }
 
     public void play(){
-        Collections.shuffle(weapons);
         for(int i=0; i<20;i++){
+            Collections.shuffle(weapons);
             for (Weapon weapon : weapons) {
                 weapon.dealDamage();
             }

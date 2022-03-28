@@ -1,3 +1,7 @@
+package Weapons;
+
+import Singletons.Enemy;
+
 public class Artillery extends Weapon{
     private double range;
 

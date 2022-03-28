@@ -1,3 +1,7 @@
+package AbstractFactory;
+
+import Weapons.Weapon;
+
 import java.util.ArrayList;
 
 public class WeaponCreator {

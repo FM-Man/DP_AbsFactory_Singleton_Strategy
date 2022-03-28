@@ -1,8 +1,10 @@
+package Weapons;
+
+import Singletons.Enemy;
+
 public class Tank extends Weapon{
-    //private String name;
     private double speed;
     private double range;
-    //private double damage;
 
     public Tank(String name, double speed, double range, double damage){
         super(name,damage);

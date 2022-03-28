@@ -1,3 +1,5 @@
+package Weapons;
+
 public abstract class Weapon {
     String name;
     double damage;
